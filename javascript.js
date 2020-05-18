@@ -1,6 +1,6 @@
 //Help menu variables
 var helpMenu_contact_command  = 'contact '; var helpMenu_contact_info     = '      | list my contact information';
-var helpMenu_accounts_command = 'accounts '; var helpMenu_accounts_info    = '      | list my accounts';
+var helpMenu_accounts_command = 'accounts'; var helpMenu_accounts_info    = '      | list my accounts';
 var helpMenu_projects_command = 'projects'; var helpMenu_projects_info    = '      | list my projects';
 var helpMenu_clear_command    = 'clear   '; var helpMenu_clear_info       = '      | clear the console';
 
