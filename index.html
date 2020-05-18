@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link rel="shortcut icon" type="image/png" href="https://mathiasni.com/favicon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Fira Mono' rel='stylesheet'>
+    <body style="background-color: #313440;">
+
+    <script src="javascript.js"></script>
+
+    <style>
+    span.white  { color: #ced2e7;}
+    span.green  { color: #92d392;}
+    span.pink   { color: #d798ea;}
+    span.yellow { color: #e0d090;}
+    span.blue   { color: #55b6c2;}
+    span.red    { color: #e06c6d;}
+    body {color:#ced2e7; font-family: 'Fira Mono'; font-size: 22px;}
+    input {background-color: #313440; color:#ced2e7; font-family: 'Fira Mono'; font-size: 22px; border: none;}
+    input:focus, textarea:focus, select:focus{outline: none;}
+    </style>
+
+      <title>Mathias Naess Iversen</title>
+  </head>
+
+  <body>
+    <p> <span class="white">Last login:</span> <span id="datetime" ></span> </p>
+    <p id="consoleInput"></p>
+    <p id="consoleOutput"></p>
+    <p> <span class="green">guest@mathiasni.com</span> <span class="pink">dir</span> <span class="yellow">/www</span> <br/>
+    <span class="white">$</span> <input type="text" onfocus="this.value=''" class="userInput" onkeydown="userInput(this)" autofocus> </p>
+  </body>
+
+
+</html>
