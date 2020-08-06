@@ -10,8 +10,9 @@ var contactMenu_location_command = 'location'; var contactMenu_location_info    
 var contactMenu_email_command    = 'email   '; var contactMenu_email_info       = '      | epost@mathiasni.com';
 
 //Accounts menu variables
-var accountsMenu_github_name    = 'GitHub:       | '; var accountsMenu_github_link    = '<a href="https://github.com/MathiasNI" style="color:#55b6c2">https://github.com/MathiasNI</a>';
-var accountsMenu_linkedin_name  = 'LinkedIn:     | '; var accountsMenu_linkedin_link  = '<a href="https://linkedin.com/" style="color:#55b6c2">https://linkedin.com/</a>';
+var accountsMenu_github_name     = 'GitHub:       | '; var accountsMenu_github_link    = '<a href="https://www.github.com/MathiasNI" style="color:#55b6c2">https://www.github.com/MathiasNI</a>';
+var accountsMenu_linkedin_name   = 'LinkedIn:     | '; var accountsMenu_linkedin_link  = '<a href="https://linkedin.com/in/MathiasNI" style="color:#55b6c2">https://www.linkedin.com/MathiasNI</a>';
+var accountsMenu_instagram_name  = 'Instagram:    | '; var accountsMenu_instagram_link  = '<a href="https://www.instagram.com/Mathias.N.I/" style="color:#55b6c2">https://www.instagram.com/Mathias.N.I/</a>';
 
 //Unknown input variable
 var errorMenu = "<p> <span class='red'>Command not found.  Type 'help' to see a list over available commands.</span> </p>";
@@ -28,7 +29,7 @@ function userInput(ele) {
         document.getElementById("consoleOutput").innerHTML = "<pre>" + helpMenu_contact_command + helpMenu_contact_info + "<br/>" + helpMenu_accounts_command + helpMenu_accounts_info + "<br/>" + helpMenu_projects_command + helpMenu_projects_info + "<br/>" + helpMenu_clear_command + helpMenu_clear_info + "</pre>";
       } else if (ele.value == "accounts") {
         document.getElementById("consoleInput").innerHTML  = '<p> <span class="green">guest@mathiasni.com</span> <span class="pink">dir</span> <span class="yellow">/www</span> <br/> <span class="white">$ </span>' + ele.value + "</p>";
-        document.getElementById("consoleOutput").innerHTML = "<pre>" + accountsMenu_github_name + accountsMenu_github_link + "<br/>" + accountsMenu_linkedin_name + accountsMenu_linkedin_link + "</pre>";
+        document.getElementById("consoleOutput").innerHTML = "<pre>" + accountsMenu_github_name + accountsMenu_github_link + "<br/>" + accountsMenu_linkedin_name + accountsMenu_linkedin_link + "<br/>" + accountsMenu_instagram_name + accountsMenu_instagram_link + "</pre>";
       } else if (ele.value == "contact") {
         document.getElementById("consoleInput").innerHTML  = '<p> <span class="green">guest@mathiasni.com</span> <span class="pink">dir</span> <span class="yellow">/www</span> <br/> <span class="white">$ </span>' + ele.value + "</p>";
         document.getElementById("consoleOutput").innerHTML = "<pre>" + contactMenu_name_command + contactMenu_name_info + "<br/>" + contactMenu_location_command + contactMenu_location_info + "<br/>" + contactMenu_email_command + contactMenu_email_info + "</pre>";
